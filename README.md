@@ -15,3 +15,5 @@ To use the Grey Wolf Optimizer, you need to have Python and the necessary packag
 
 ```bash
 pip install numpy
+
+##usage
