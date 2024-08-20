@@ -1,6 +1,5 @@
-# GreyWolfOptimizer
 
-# Grey Wolf Optimizer (GWO)
+# Grey Wolf Optimizer (GWO) for CNN and any other Nural Network
 
 Welcome to the Grey Wolf Optimizer (GWO) repository! This Python module implements the Grey Wolf Optimizer algorithm, a nature-inspired optimization algorithm that mimics the hunting behavior of grey wolves. It is designed for optimizing hyperparameters in machine learning models.
 
