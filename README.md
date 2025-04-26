@@ -2,7 +2,7 @@
 
 > A minimalist and powerful **Grey Wolf Optimizer (GWO)** in Python, originally developed in MATLAB and now ported for easy use in Pythonic AI/ML workflows. Ideal for **filter optimization**, **hyperparameter tuning**, and other global optimization problems.
 
-![gwo-banner]([https://upload.wikimedia.org/wikipedia/commons/0/06/Canis_lupus_laying.jpg](https://www.researchgate.net/publication/360204211/figure/fig5/AS:11431281397762836@1745513711486/General-representation-of-grey-wolf-optimization-GWO-algorithm-33.tif))
+![gwo-banner](https://ch.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/44974/versions/9/screenshot.jpg)
 
 ---
 
