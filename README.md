@@ -47,3 +47,30 @@ You only need **NumPy**:
 
 ```bash
 pip install numpy
+```
+```python
+from gwo import GWO
+import numpy as np
+```
+# 🎯 Define objective function (Sphere function example)
+```
+def sphere(x):
+    return np.sum(x ** 2)
+```
+# ⚙️ Create GWO instance
+```
+gwo = GWO(
+    obj_function=sphere,      # Your custom loss/objective function
+    lb=[-5]*10,               # Lower bounds per dimension
+    ub=[5]*10,                # Upper bounds per dimension
+    dim=10,                   # Dimensionality of problem
+    n_agents=30,              # Number of grey wolves (population)
+    max_iter=100              # Total number of iterations
+)
+```
+# 🐺 Run the optimization
+```
+best_position, best_score = gwo.run()
+
+print("✅ Best position:", best_position)
+print("🎯 Best score:", best_score)
