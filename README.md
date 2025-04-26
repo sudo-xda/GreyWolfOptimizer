@@ -1,20 +1,49 @@
+# 🐺 Grey Wolf Optimizer (GWO) – Python Port from MATLAB
 
-# Grey Wolf Optimizer (GWO) for CNN and any other Nural Network
+> A minimalist and powerful **Grey Wolf Optimizer (GWO)** in Python, originally developed in MATLAB and now ported for easy use in Pythonic AI/ML workflows. Ideal for **filter optimization**, **hyperparameter tuning**, and other global optimization problems.
 
-Welcome to the Grey Wolf Optimizer (GWO) repository! This Python module implements the Grey Wolf Optimizer algorithm, a nature-inspired optimization algorithm that mimics the hunting behavior of grey wolves. It is designed for optimizing hyperparameters in machine learning models.
+![gwo-banner]([https://upload.wikimedia.org/wikipedia/commons/0/06/Canis_lupus_laying.jpg](https://www.researchgate.net/publication/360204211/figure/fig5/AS:11431281397762836@1745513711486/General-representation-of-grey-wolf-optimization-GWO-algorithm-33.tif))
 
-## Features
+---
 
-- **Grey Wolf Optimization Algorithm**: Implements the GWO algorithm for parameter optimization.
-- **Customizable Objective Function**: Allows for optimization of various functions.
-- **Easy Integration**: Simple to integrate with existing machine learning models.
+## 📌 Key Features
 
-## Installation
+✅ Simple and clean implementation  
+✅ Inspired by social hierarchy and hunting behavior of grey wolves  
+✅ Optimizes any custom loss/objective function  
+✅ Easy to plug into machine learning pipelines  
+✅ Only depends on **NumPy**  
+✅ Fully customizable for research or production use
 
-To use the Grey Wolf Optimizer, you need to have Python and the necessary packages installed. You can install the required packages using pip:
+---
+
+## 🌐 Algorithm Inspiration
+
+Grey Wolf Optimizer (GWO) mimics the leadership structure and cooperative hunting of grey wolves:
+- **Alpha (α)** – best solution
+- **Beta (β)** – second-best
+- **Delta (δ)** – third-best
+- **Omega (ω)** – the rest
+
+Each wolf updates its position based on α, β, and δ, encouraging **exploration** and **exploitation**.
+
+📖 *Reference*:  
+Mirjalili, S., Mirjalili, S.M., & Lewis, A. (2014). [Grey Wolf Optimizer](https://doi.org/10.1016/j.advengsoft.2013.12.007), *Advances in Engineering Software*.
+
+---
+
+## 🧠 How It Works
+
+1. Randomly initialize a pack of grey wolves (candidate solutions)
+2. Identify the top 3 solutions: alpha, beta, and delta
+3. Update all other solutions using a weighted influence of the top 3
+4. Repeat for a number of iterations to converge on the global minimum
+
+---
+
+## 🛠️ Installation
+
+You only need **NumPy**:
 
 ```bash
 pip install numpy
-
-
-
